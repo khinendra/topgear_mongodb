@@ -6,7 +6,7 @@ Here are the quesries corresponding to exercise_1.pdf
 4.  db.restaurants.find({},{restaurant_id:1,name:1, borough:1,'address.zipcode':1,'_id':0});
 5.  db.restaurants.find({borough:'Bronx'});
 6.  db.restaurants.find({borough:'Bronx'}).limit(5);
-7.  db.restaurants.find({borough:'Bronx'}).skip(5)limit(5);
+7.  db.restaurants.find({borough:'Bronx'}).skip(5).limit(5);
 8.  db.restaurants.find({'grades.score':{"$gt":90}});
 9.  db.restaurants.find({'grades.score':{"$in":[80,100]}});
 10. db.restaurants.find({'address.coord.0':{"$lt":-95.754168}});
